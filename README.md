@@ -16,6 +16,22 @@ Before building this project on Ubuntu (tested on 11.10) you will need to instal
 
 To build this project you simply run `make`. It will produce a binary named `s3` under the `src/` dir.
 
+## Building via Vagrant (Ubuntu 12.04 precise)
+
+If you'd like to build the linux binaries and you're on say a Mac, you can build the binaries via Vagrant.  Once you have vagrant installed, http://vagrantup.com/, you can execute the following:
+
+```
+vagrant up
+```
+
+This will stand up a new vm, install the necessary dependencies, compile the binary, create the debian package, and place the debian package in the debian package, same as the Makefile would.  
+
+To stop the vagrant image after you're done, you can call
+
+```
+vagrant destroy
+```
+
 ## Installing
 
 Once compiled, the resulting s3 binary must be placed in /usr/lib/apt/methods/ along with the other protocol binaries.
