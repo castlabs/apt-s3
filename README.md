@@ -1,4 +1,4 @@
-# apt-s3
+# apt-multi-iam-s3
 
 Additional "s3" protocol for apt so you can host your giant apt repository in s3 on the cheap!
 
@@ -33,14 +33,14 @@ Simply upload all of your .deb packages and Packages.gz file into the s3 bucket 
 Before synchronization, you need a s3cmd tool installed and configured:
 
     [sudo] apt-get install s3cmd
-    
+
     s3cmd --configure
 
 To synchronize local repository to s3 as read-only, execute:
 
     s3cmd sync /srv/apt-repo-dir/dists s3://bucket_name
     s3cmd sync /srv/apt-repo-dir/pool s3://bucket_name
-    
+
 ## Using GPG keys
 
 If you're signing you repository with key, export it to server:

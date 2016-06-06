@@ -6,14 +6,14 @@
 
 include /usr/share/cdbs/1/rules/debhelper.mk
 
-DEB_DIR=$(CURDIR)/debian/apt-transport-s3
+DEB_DIR=$(CURDIR)/debian/apt-multi-iam-s3
 
-#configure/apt-transport-s3::
+#configure/apt-multi-iam-s3::
 #	@echo "We don't really have a configure script"
 #
-build/apt-transport-s3::
+build/apt-multi-iam-s3::
 	$(MAKE) -f $(CURDIR)/Makefile
 
-install/apt-transport-s3::
+install/apt-multi-iam-s3::
 	@cp $(CURDIR)/src/s3 $(DEB_DIR)/usr/lib/apt/methods/
 

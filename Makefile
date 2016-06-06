@@ -8,7 +8,7 @@ all:
 
 clean:
 	for d in $(DIRS); do (cd $$d; $(MAKE) clean); done;
-	rm -rf debian/apt-transport-s3*
+	rm -rf debian/apt-multi-iam-s3*
 
 deb:
 	dpkg-buildpackage -us -uc

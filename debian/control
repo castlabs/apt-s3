@@ -1,4 +1,4 @@
-Source: apt-transport-s3
+Source: apt-multi-iam-s3
 Section: admin
 Priority: optional
 Maintainer: Jorge A Gallegos <kad@blegh.net>
@@ -6,11 +6,10 @@ Homepage: https://github.com/kyleshank/apt-s3
 Standards-Version: 3.7.3
 Build-Depends: debhelper (>= 5.0), libapt-pkg-dev (>= 0.7.23), cdbs, libcurl4-openssl-dev
 
-Package: apt-transport-s3
+Package: apt-multi-iam-s3
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: an APT transport for communicating with Amazon S3
- This package contains the APT amazon s3 transport. It makes it possible to
- use
+ This package contains an APT amazon s3 transport that supports different IAM credentials for each s3-backed repository. It makes it possible to use
  'deb s3://AWS_ACCESS_ID:[AWS_SECRET_KEY]@s3.amazonaws.com/BUCKETNAME prod main'
  type lines in your sources.list file.

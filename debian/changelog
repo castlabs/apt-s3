@@ -1,3 +1,9 @@
+apt-multi-iam-s3 (1.1.1ubuntu2) xenial; urgency=low
+
+  * Renamed to avoid collision with the apt-transport-s3 included in Xenial
+
+ -- Joe Block <joe.block@daqri.com>  Mon Jun  6 11:38:17 PDT 2016
+
 apt-transport-s3 (1.1.1ubuntu2) precise; urgency=low
 
   * Modified for company needs
